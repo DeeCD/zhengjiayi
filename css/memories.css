@@ -13,6 +13,20 @@
     background: -webkit-linear-gradient(top left, #ee9ca7 0%, #ee9ca7 100%);
     background: linear-gradient(to bottom right, #ee9ca7 0%, #ee9ca7 100%);
     opacity: 0.9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 .bg-bubbles {
@@ -179,32 +193,35 @@
     14% {
         margin-bottom: 0;
         width: 80%;
-        height: 550px;
+        height: 300px;
         border-radius: 6px;
         background-color: rgba(255, 255, 255, 0.5);
         position: absolute;
         left: 10%;
-        bottom: 12%;
+        bottom: 50%;
+        transform: translateY(50%);
     }
     96% {
         margin-bottom: 0;
         width: 80%;
-        height: 550px;
+        height: 300px;
         border-radius: 6px;
         background-color: rgba(255, 255, 255, 0.6);
         position: absolute;
         left: 10%;
-        bottom: 12%;
+        bottom: 50%;
+        transform: translateY(50%);
     }
     100% {
         margin-bottom: 0;
         width: 80%;
-        height: 550px;
+        height: 300px;
         border-radius: 6px;
         background-color: rgba(255, 255, 255, 0.6);
         position: absolute;
         left: 10%;
-        bottom: 12%;
+        bottom: 50%;
+        transform: translateY(50%);
     }
 }
 
@@ -231,32 +248,35 @@
     14% {
         margin-bottom: 0;
         width: 80%;
-        height: 550px;
+        height: 300px;
         border-radius: 6px;
         background-color: rgba(255, 255, 255, 0.5);
         position: absolute;
         left: 10%;
-        bottom: 12%;
+        bottom: 50%;
+        transform: translateY(50%);
     }
     96% {
         margin-bottom: 0;
         width: 80%;
-        height: 550px;
+        height: 300px;
         border-radius: 6px;
         background-color: rgba(255, 255, 255, 0.6);
         position: absolute;
         left: 10%;
-        bottom: 12%;
+        bottom: 50%;
+        transform: translateY(50%);
     }
     100% {
         margin-bottom: 0;
         width: 80%;
-        height: 550px;
+        height: 300px;
         border-radius: 6px;
         background-color: rgba(255, 255, 255, 0.6);
         position: absolute;
         left: 10%;
-        bottom: 12%;
+        bottom: 50%;
+        transform: translateY(50%);
     }
 }
 
@@ -323,14 +343,16 @@
     position: absolute;
     width: 40%;
     left: 10%;
-    top: 10%;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .ly-txt02 {
     position: absolute;
     width: 40%;
     left: 60%;
-    top: 10%;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .ly-stxt01 {
@@ -2611,352 +2633,114 @@
 
 /* ==================== 手机端适配 ==================== */
 @media screen and (max-width: 768px) {
-    /* 第一屏文字缩小 */
     .ly-stxt01, .ly-stxt02, .ly-stxt03,
     .ly-stxt04, .ly-stxt05, .ly-stxt06,
     .ly-stxt07, .ly-stxt08, .ly-stxt09, .ly-stxt10 {
-        font-size: 16px !important;
+        font-size: 16px;
     }
-
-    .ly-txt01, .ly-txt02 {
-        width: 45% !important;
-        top: 8% !important;
-    }
-
+    
     .ly-txt01 {
-        left: 3% !important;
+        top: 50%;
+        transform: translateY(-50%);
     }
-
+    
     .ly-txt02 {
-        left: 52% !important;
-    }
-
-    /* 调整动画中的 margin-top 值 */
-    .ly-stxt02, .ly-stxt03, .ly-stxt04, .ly-stxt05 {
-        margin-top: -36px !important;
-    }
-
-    @keyframes ly-stxt02_move {
-        0% { margin-top: -36px; }
-        8% { margin-top: -36px; }
-        16% { margin-top: 0; }
-        100% { margin-top: 0; }
-    }
-
-    @keyframes ly-stxt03_move {
-        0% { margin-top: -36px; }
-        16% { margin-top: -36px; }
-        24% { margin-top: 0; }
-        100% { margin-top: 0; }
-    }
-
-    @keyframes ly-stxt04_move {
-        0% { margin-top: -36px; }
-        24% { margin-top: -36px; }
-        32% { margin-top: 0; }
-        100% { margin-top: 0; }
-    }
-
-    @keyframes ly-stxt05_move {
-        0% { margin-top: -36px; }
-        32% { margin-top: -36px; }
-        40% { margin-top: 0; }
-        100% { margin-top: 0; }
-    }
-
-    .ly-stxt07, .ly-stxt08, .ly-stxt09, .ly-stxt10 {
-        margin-top: -36px !important;
-    }
-
-    @keyframes ly-stxt07_move {
-        0% { margin-top: -36px; }
-        48% { margin-top: -36px; }
-        56% { margin-top: 0; }
-        100% { margin-top: 0; }
-    }
-
-    @keyframes ly-stxt08_move {
-        0% { margin-top: -36px; }
-        56% { margin-top: -36px; }
-        64% { margin-top: 0; }
-        100% { margin-top: 0; }
-    }
-
-    @keyframes ly-stxt09_move {
-        0% { margin-top: -36px; }
-        64% { margin-top: -36px; }
-        72% { margin-top: 0; }
-        100% { margin-top: 0; }
-    }
-
-    @keyframes ly-stxt10_move {
-        0% { margin-top: -36px; }
-        72% { margin-top: -36px; }
-        80% { margin-top: 0; }
-        100% { margin-top: 0; }
-    }
-
-    /* 盒子高度调整 */
-    .ly-box01 {
-        width: 94% !important;
-        left: 3% !important;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     @keyframes box_to_point {
+        0% {
+            margin-bottom: 50%;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            left: 48%;
+            bottom: 50%;
+        }
+        10% {
+            margin-bottom: 0;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            left: 48%;
+            bottom: 50%;
+        }
         14% {
-            width: 94% !important;
-            height: 400px !important;
-            left: 3% !important;
-            bottom: 5% !important;
+            margin-bottom: 0;
+            width: 94%;
+            height: 300px;
+            border-radius: 6px;
+            left: 3%;
+            bottom: 50%;
+            transform: translateY(50%);
+        }
+        96% {
+            margin-bottom: 0;
+            width: 94%;
+            height: 300px;
+            border-radius: 6px;
+            left: 3%;
+            bottom: 50%;
+            transform: translateY(50%);
         }
         100% {
-            width: 94% !important;
-            height: 400px !important;
-            left: 3% !important;
-            bottom: 5% !important;
+            margin-bottom: 0;
+            width: 94%;
+            height: 300px;
+            border-radius: 6px;
+            left: 3%;
+            bottom: 50%;
+            transform: translateY(50%);
         }
     }
 
-    /* 第二部分时间轴盒子 */
-    .timeline {
-        left: 5% !important;
+    @-webkit-keyframes box_to_point {
+        0% {
+            margin-bottom: 50%;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            left: 48%;
+            bottom: 50%;
+        }
+        10% {
+            margin-bottom: 0;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            left: 48%;
+            bottom: 50%;
+        }
+        14% {
+            margin-bottom: 0;
+            width: 94%;
+            height: 300px;
+            border-radius: 6px;
+            left: 3%;
+            bottom: 50%;
+            transform: translateY(50%);
+        }
+        96% {
+            margin-bottom: 0;
+            width: 94%;
+            height: 300px;
+            border-radius: 6px;
+            left: 3%;
+            bottom: 50%;
+            transform: translateY(50%);
+        }
+        100% {
+            margin-bottom: 0;
+            width: 94%;
+            height: 300px;
+            border-radius: 6px;
+            left: 3%;
+            bottom: 50%;
+            transform: translateY(50%);
+        }
     }
 
-    .timepoint, .timepoint11 {
-        left: 5% !important;
-    }
-
-    .ly-box11 {
-        width: 90% !important;
-        height: 300px !important;
-        left: 5% !important;
-        top: 5% !important;
-    }
-
-    .ly-txt11 {
-        font-size: 18px !important;
-        top: 2% !important;
-    }
-
-    .ly-txt12 {
-        font-size: 14px !important;
-        top: 8% !important;
-    }
-
-    .ly-box12 {
-        width: 90% !important;
-        height: 350px !important;
-        left: 5% !important;
-        top: 45% !important;
-    }
-
-    .ly-txt13 {
-        font-size: 18px !important;
-        top: 2% !important;
-    }
-
-    .ly-txt14 {
-        font-size: 14px !important;
-    }
-
-    .active .ly-txt14 {
-        height: 250px !important;
-    }
-
-    /* 第三部分 */
-    .ly-box21 {
-        width: 90% !important;
-        height: 250px !important;
-        left: 5% !important;
-    }
-
-    .ly-txt21 {
-        font-size: 18px !important;
-    }
-
-    .ly-txt22 {
-        font-size: 13px !important;
-    }
-
-    .ly-box22 {
-        width: 90% !important;
-        height: 250px !important;
-        left: 5% !important;
-        top: 40% !important;
-    }
-
-    .ly-txt23 {
-        font-size: 18px !important;
-    }
-
-    .ly-txt24 {
-        font-size: 13px !important;
-    }
-
-    .ly-box23 {
-        width: 90% !important;
-        height: 300px !important;
-        left: 5% !important;
-        bottom: 45% !important;
-    }
-
-    .ly-txt25 {
-        font-size: 18px !important;
-    }
-
-    .ly-txt26 {
-        font-size: 13px !important;
-    }
-
-    /* 第四部分 */
-    .ly-box31 {
-        width: 90% !important;
-        height: 300px !important;
-        left: 5% !important;
-    }
-
-    .ly-txt31 {
-        font-size: 18px !important;
-    }
-
-    .ly-txt32 {
-        font-size: 14px !important;
-    }
-
-    .ly-box32 {
-        width: 90% !important;
-        height: 300px !important;
-        left: 5% !important;
-        top: 50% !important;
-    }
-
-    .ly-txt33 {
-        font-size: 18px !important;
-    }
-
-    .ly-txt34 {
-        font-size: 14px !important;
-    }
-
-    .active .ly-txt34 {
-        height: 220px !important;
-    }
-
-    /* 后续修正部分 */
-    .ly-box51 {
-        width: 90% !important;
-        height: 250px !important;
-        left: 5% !important;
-        bottom: 45% !important;
-    }
-
-    .ly-txt51 {
-        font-size: 13px !important;
-    }
-
-    .ly-box52 {
-        width: 90% !important;
-        height: 250px !important;
-        left: 5% !important;
-    }
-
-    .ly-img61 {
-        margin-bottom: 0 !important;
-    }
-
-    .ly-txt61, .ly-txt71, .ly-txt72, .ly-txt73,
-    .ly-txt82, .ly-txt90, .ly-txt91, .ly-txt92, .ly-txt93 {
-        font-size: 13px !important;
-    }
-
-    .ly-box71 {
-        width: 90% !important;
-        height: 250px !important;
-        left: 5% !important;
-        top: 35% !important;
-    }
-
-    .xx71 {
-        height: 250px !important;
-    }
-
-    .ly-box72 {
-        width: 90% !important;
-        height: 250px !important;
-        left: 5% !important;
-        bottom: 30% !important;
-    }
-
-    .ly-box73 {
-        width: 90% !important;
-        height: 220px !important;
-        left: 5% !important;
-        bottom: 15% !important;
-    }
-
-    .ly-box81 {
-        width: 90% !important;
-        height: 280px !important;
-        left: 5% !important;
-    }
-
-    .ly-box82 {
-        width: 90% !important;
-        height: 300px !important;
-        left: 5% !important;
-        top: 45% !important;
-    }
-
-    .ly-txt84 {
-        font-size: 14px !important;
-    }
-
-    .active .ly-txt84 {
-        height: 220px !important;
-    }
-
-    .ly-box91 {
-        width: 90% !important;
-        height: 250px !important;
-        left: 5% !important;
-        bottom: 35% !important;
-    }
-
-    .xx91 {
-        height: 250px !important;
-    }
-
-    .ly-box92 {
-        width: 90% !important;
-        height: 250px !important;
-        left: 5% !important;
-        bottom: 20% !important;
-    }
-
-    .ly-box93 {
-        width: 90% !important;
-        height: 250px !important;
-        left: 5% !important;
-        bottom: 5% !important;
-    }
-
-    .xx92 {
-        top: 20% !important;
-    }
-
-    .timepoint91 {
-        top: 18% !important;
-    }
-
-    .active .timepoint91 {
-        top: 22% !important;
-    }
-
-    .xx94 {
-        height: 70% !important;
-    }
-
-    /* 气泡动画调整 */
     .bg-bubbles li {
         width: 20px !important;
         height: 20px !important;
